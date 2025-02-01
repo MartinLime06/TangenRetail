@@ -8,20 +8,21 @@ body{
 
 .main-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
     align-items: center;
     flex-direction: row;
-    height: 100%;
+    gap: 1em;
 }
 
 .text-wrapper{
     text-wrap: wrap;
-    width: 50%;
     margin: 1em;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     text-align: left;
+    max-width: 50%;
 }
 
 .text-wrapper p{
@@ -30,9 +31,11 @@ body{
 }
 
 .header-wrapper{
-    width: 50%;
+    max-width: 50%;
+    text-align: center;
     margin: 1em;
     display: flex;
     justify-self: center;
     align-items: center;
+    flex-direction: column;
 }
