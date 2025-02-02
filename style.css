@@ -6,7 +6,42 @@ body{
     padding: 0;
 }
 
-.main-wrapper{
+/*-------------------
+     INDEX PAGE
+-------------------*/
+
+.nav-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    margin: 1em;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+    list-style-type: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #ffff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.navbar a:hover{
+    font-weight: 700;
+}
+
+/*-------------------
+     ABOUT PAGE
+-------------------*/
+
+.about-wrapper{
     display: flex;
     justify-content: center;
     height: 100%;
