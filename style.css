@@ -376,6 +376,7 @@ body{
 
 .tjenester-list{
     display: grid;
+    gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     grid-column-start: 1;
     grid-column-end: 1;
@@ -391,7 +392,6 @@ body{
 
 .tjenester-item{
     border: 1px solid #ffffff;
-    margin-bottom: 1em;
     padding: 1em;
     list-style-type: none;
     background-color: rgb(39, 39, 39);
