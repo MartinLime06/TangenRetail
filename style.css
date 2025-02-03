@@ -397,28 +397,28 @@ body{
 }
 
 .tjenester-item{
-    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-    padding: 1em;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75) !important;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75) !important;
+    padding: 1em !important;
     list-style-type: none;
     background-color: rgb(39, 39, 39);
-    height: 10em;
-    width: 15em;
-    border-radius: 16px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    text-wrap: wrap;
+    height: 10em !important;
+    width: 15em !important;
+    border-radius: 16px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+    text-wrap: wrap !important;
 }
 
 .tjenester-item strong{
-    font-size: 20px;
-    padding-bottom: 0.5em;
+    font-size: 20px !important;
+    padding-bottom: 0.5em !important;
 }
 
 .tjenester-item p{
-    font-size: 15px;
+    font-size: 15px !important;
 }
 
 @media screen and (max-width: 1500px){
