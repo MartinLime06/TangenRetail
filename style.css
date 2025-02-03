@@ -370,7 +370,7 @@ body{
     width: 100%;
 }
 
-.tjenester-wrapper h1{
+.tjenester-header{
     text-align: center;
     font-size: 50px;
 }
