@@ -360,6 +360,7 @@ body{
 -------------------*/
 
 .tjenester-wrapper{
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,8 +377,8 @@ body{
 
 .tjenester-list{
     display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    grid-template-columns: auto auto auto;
     grid-column-start: 1;
     grid-column-end: 1;
     width: auto;
@@ -386,13 +387,22 @@ body{
 
 @media screen and (max-width: 700px){
     .tjenester-list{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: auto;
         width: 100%;
     }
 }
 
-.tjenester-list div{
-    border: 1px solid #ffffff;
+@media screen and (max-width: 1000px){
+    .tjenester-list{
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+}
+
+.tjenester-item{
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
     padding: 1em;
     list-style-type: none;
     background-color: rgb(39, 39, 39);
@@ -418,5 +428,4 @@ body{
     .tjenester-item p{
         font-size: 16px;
     }
-    
 }
