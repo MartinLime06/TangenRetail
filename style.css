@@ -370,12 +370,12 @@ body{
     width: 100%;
 }
 
-.tjenesterheader{
+.tjenester-header{
     text-align: center;
     font-size: 50px;
 }
 
-.tjenesterlist{
+.tjenester-list{
     display: grid;
     gap: 2em;
     grid-template-columns: auto auto auto;
@@ -386,20 +386,20 @@ body{
 }
 
 @media screen and (max-width: 700px){
-    .tjenesterlist{
+    .tjenester-list{
         grid-template-columns: auto;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 1000px){
-    .tjenesterlist{
+    .tjenester-list{
         grid-template-columns: auto auto;
         width: 100%;
     }
 }
 
-.tjenesteritem{
+.tjenester-item{
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
@@ -415,17 +415,17 @@ body{
     text-wrap: wrap;
 }
 
-.tjenesteritem strong{
+.tjenester-item strong{
     font-size: 20px;
     padding-bottom: 0.5em;
 }
 
-.tjenesteritem p{
+.tjenester-item p{
     font-size: 15px;
 }
 
 @media screen and (max-width: 1500px){
-    .tjenesteritem p{
+    .tjenester-item p{
         font-size: 16px;
     }
 }
