@@ -16,9 +16,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 85vh;
     width: auto;
     gap: 1em;
+    margin: 0;
 }
 
 .index-header h3 h1 p{
@@ -43,30 +44,28 @@ body{
     font-size: 20px;
 }
 
-.index-info{
+.index-info-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
-.info-list{
+.index-info{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 1em;
-    list-style-type: none;
-}
-
-.info-item{
-    background-color: rgb(48, 48, 48);
-    width: 20em;
-    height: 20em;
-    text-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
     overflow: hidden;
-    border-radius: 16px;
-    padding: 10px;
+    text-wrap: wrap;
+    text-align: center;
+    gap: 1em;
+    margin: 0;
+    padding-bottom: 100px;
 }
 
 /*-------------------
@@ -85,6 +84,12 @@ body{
     gap: 1em;
     margin: 1em;
     list-style-type: none;
+}
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        display: none;
+    }
 }
 
 .logo-wrapper{
@@ -119,7 +124,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 0;
     height: 100vh;
     width: 100%;
@@ -133,6 +137,30 @@ body{
     align-items: center;
     flex-direction: row;
     gap: 1em;
+}
+
+@media screen and (max-width: 1000px){
+
+    .about{
+        height: 90%;
+        width: 100%;
+    }
+    .about-wrapper{
+        flex-direction: column;
+        gap: 1em;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .section-1{
+        max-width: 95%;
+        height: 20em;
+    }
+    .section-2{
+        max-width: 95%;
+        position: absolute;
+        top: 25em;
+    }
 }
 
 .header{
@@ -160,10 +188,28 @@ body{
     height: 100%;
 }
 
-.section-1 img{
+
+.img-div{
     border-radius: 16px;
     width: auto;
     height: 30em;
+}
+
+.img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.les-cv a{
+    text-decoration: underline;
+    color: #ffa600;
+    cursor: pointer;
+}
+
+.les-cv a:hover{
+    font-weight: 700;
 }
 
 /*-------------------
@@ -251,6 +297,12 @@ body{
     gap: 5em;
 }
 
+@media screen and (max-width: 1000px){
+    .contact-info{
+        flex-direction: column;
+    }
+}
+
 .adress .phone .email{
     display: flex;
     justify-content: center;
@@ -293,4 +345,29 @@ body{
 .svg-wrapper svg{
     width: 1em;
     height: 1em;
+}
+
+/*-------------------
+     Tjenester PAGE
+-------------------*/
+
+.tjenester-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    height: 100vh;
+    width: 100%;
+}
+
+.tjenester-list{
+    display: grid;
+    gap: 1em;
+    width: 50%;
+}
+
+.tjenester-list li{
+    list-style-type: none;
+    background-color: rgb(39, 39, 39);
 }
