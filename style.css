@@ -375,11 +375,12 @@ body{
 }
 
 .tjenester-list{
-    display: grid;
-    gap: 2em;
-    grid-template-columns: auto auto auto;
-    width: auto;
-    height: auto;
+    margin: 0 !important;
+    display: grid !important;
+    gap: 2em !important;
+    grid-template-columns: auto auto auto !important;
+    width: auto !important;
+    height: auto !important;
 }
 
 @media screen and (max-width: 700px){
